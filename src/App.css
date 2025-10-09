@@ -1,0 +1,92 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.main-bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f3057, #00587a, #008891, #e7e7de);
+    background-size: 300% 300%;
+    animation: gradientMove 20s ease infinite;
+    color: #f9f9f9;
+    padding-bottom: 50px;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.custom-navbar {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+.nav-link {
+    color: #f8f9fa !important;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+.bio-section {
+    color: #fffbe6;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.bio-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.text-accent {
+    color: #ffd166;
+}
+
+.starry-container {
+    display: flex;
+    justify-content: center;
+}
+
+.starry-img {
+    max-width: 700px;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.painting-card {
+    border: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.05);
+    position: relative;
+}
+
+.painting-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+}
+
+.gallery-img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.painting-title-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(15, 48, 87, 0.7);
+    color: #ffd166;
+    padding: 5px 0;
+    font-weight: bold;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
