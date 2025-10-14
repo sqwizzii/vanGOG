@@ -1,92 +1,60 @@
 body {
-    font-family: "Poppins", sans-serif;
-}
-
-.main-bg {
-    min-height: 100vh;
-    background: linear-gradient(135deg, #0f3057, #00587a, #008891, #e7e7de);
-    background-size: 300% 300%;
-    animation: gradientMove 20s ease infinite;
-    color: #f9f9f9;
-    padding-bottom: 50px;
-}
-
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-.custom-navbar {
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(5px);
-}
-
-.nav-link {
-    color: #f8f9fa !important;
-    margin: 0 10px;
-    transition: 0.3s;
-}
-
-.nav-link:hover {
-    color: #ffcc00 !important;
-}
-
-.bio-section {
-    color: #fffbe6;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.bio-img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.text-accent {
-    color: #ffd166;
-}
-
-.starry-container {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
 }
 
-.starry-img {
-    max-width: 700px;
-    width: 80%;
+.app {
+    text-align: center;
+}
+
+.calculator {
+    border: 2px solid #444;
     border-radius: 12px;
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    width: 320px;
+    background-color: #222;
+    padding: 20px;
+    color: white;
 }
 
-.painting-card {
+.display {
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-align: right;
+    min-height: 60px;
+}
+
+.previous {
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.2rem;
     border: none;
-    transition: all 0.3s ease-in-out;
-    border-radius: 15px;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.05);
-    position: relative;
+    border-radius: 8px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
 }
 
-.painting-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+button:hover {
+    background-color: #666;
 }
 
-.gallery-img {
-    height: 250px;
-    object-fit: cover;
-}
-
-.painting-title-overlay {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgba(15, 48, 87, 0.7);
-    color: #ffd166;
-    padding: 5px 0;
-    font-weight: bold;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+.span-two {
+    grid-column: span 2;
 }
