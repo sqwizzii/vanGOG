@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { inputDigit, chooseOperator, calculate, clear } from '../redux/calculatorSlice';
-import '../App.css'; // Можеш підключити власний CSS
+import { inputDigit, chooseOperator, calculate, clear } from '../redux/bookSlice';
+import '../App.css';
 
 function Calculator() {
     const { current, previous, operator } = useSelector((state) => state.calculator);
