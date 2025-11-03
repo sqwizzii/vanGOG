@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
-import "./index.css"; // не обов’язково, якщо немає стилів
+import { Provider } from "react-redux";
+import { store } from "./store";
+import CategoryList from "./CategoryList";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>
+    <Provider store={store}>
+        <CategoryList />
+    </Provider>
 );
